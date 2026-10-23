@@ -115,5 +115,10 @@ namespace PengajuanPrakerin
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tampilkanKonten(new FormREPORT());
+        }
     }
 }

@@ -118,5 +118,24 @@ namespace PengajuanPrakerin
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (FormREPORT frmViewer =
+                    new FormREPORT("LAPORAN_DATA_SISWA.rpt"))
+                {
+                    frmViewer.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Gagal menampilkan laporan: " + ex.Message
+                );
+            }
+        }
     }
+    
 }

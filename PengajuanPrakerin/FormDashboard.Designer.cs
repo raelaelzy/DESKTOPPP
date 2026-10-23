@@ -19,6 +19,7 @@ namespace PengajuanPrakerin
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnPenempatan = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnRole = new System.Windows.Forms.Button();
             this.btnUsers = new System.Windows.Forms.Button();
@@ -29,13 +30,14 @@ namespace PengajuanPrakerin
             this.lblWelcome = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelKonten = new System.Windows.Forms.Panel();
-            this.btnPenempatan = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelMenu.Controls.Add(this.button1);
             this.panelMenu.Controls.Add(this.btnPenempatan);
             this.panelMenu.Controls.Add(this.btnLogout);
             this.panelMenu.Controls.Add(this.btnRole);
@@ -51,6 +53,21 @@ namespace PengajuanPrakerin
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(230, 650);
             this.panelMenu.TabIndex = 0;
+            // 
+            // btnPenempatan
+            // 
+            this.btnPenempatan.BackColor = System.Drawing.Color.LightGreen;
+            this.btnPenempatan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPenempatan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPenempatan.Location = new System.Drawing.Point(15, 374);
+            this.btnPenempatan.Name = "btnPenempatan";
+            this.btnPenempatan.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnPenempatan.Size = new System.Drawing.Size(200, 36);
+            this.btnPenempatan.TabIndex = 10;
+            this.btnPenempatan.Text = "Penempatan Prakerin";
+            this.btnPenempatan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPenempatan.UseVisualStyleBackColor = false;
+            this.btnPenempatan.Click += new System.EventHandler(this.btnPenempatan_Click);
             // 
             // btnLogout
             // 
@@ -190,20 +207,20 @@ namespace PengajuanPrakerin
             this.panelKonten.TabIndex = 1;
             this.panelKonten.Paint += new System.Windows.Forms.PaintEventHandler(this.panelKonten_Paint);
             // 
-            // btnPenempatan
+            // button1
             // 
-            this.btnPenempatan.BackColor = System.Drawing.Color.LightGreen;
-            this.btnPenempatan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPenempatan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPenempatan.Location = new System.Drawing.Point(15, 374);
-            this.btnPenempatan.Name = "btnPenempatan";
-            this.btnPenempatan.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnPenempatan.Size = new System.Drawing.Size(200, 36);
-            this.btnPenempatan.TabIndex = 10;
-            this.btnPenempatan.Text = "Penempatan Prakerin";
-            this.btnPenempatan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPenempatan.UseVisualStyleBackColor = false;
-            this.btnPenempatan.Click += new System.EventHandler(this.btnPenempatan_Click);
+            this.button1.BackColor = System.Drawing.Color.LightCyan;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(15, 416);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(200, 36);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Form Report";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormDashboard
             // 
@@ -238,5 +255,6 @@ namespace PengajuanPrakerin
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Panel panelKonten;
         private System.Windows.Forms.Button btnPenempatan;
+        private System.Windows.Forms.Button button1;
     }
 }
