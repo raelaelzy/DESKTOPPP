@@ -45,6 +45,7 @@ namespace PengajuanPrakerin
             this.colAlamat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colUbah = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colHapus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -266,11 +267,24 @@ namespace PengajuanPrakerin
             this.colHapus.HeaderText = "";
             this.colHapus.Name = "colHapus";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightCyan;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(300, 130);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(90, 30);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Cetak";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormSiswa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(660, 400);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btntampil);
             this.Controls.Add(this.btnUbah);
@@ -329,5 +343,6 @@ namespace PengajuanPrakerin
         private System.Windows.Forms.DataGridViewTextBoxColumn colAlamat;
         private System.Windows.Forms.DataGridViewTextBoxColumn colUbah;
         private System.Windows.Forms.DataGridViewTextBoxColumn colHapus;
+        private System.Windows.Forms.Button button1;
     }
 }
